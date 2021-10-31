@@ -1,8 +1,11 @@
-# ecommerce-app
+# Ecommerce-app
 
 
 Developed with **React**, **Redux-toolkit** and **Tailwind css**
 
+## Preview
+
+https://hungry-turing-43898a.netlify.app/
 
 
 ## How to run the application
