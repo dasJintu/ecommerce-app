@@ -15,16 +15,32 @@ const Header = () => {
         </NavLink>
 
         <div className="space-x-5 text-gray-800">
-          <NavLink to="/men" activeClassName="font-bold">
+          <NavLink
+            to="/men"
+            className="text-gray-700 hover:underline hover:text-gray-900"
+            activeClassName="font-bold"
+          >
             Men
           </NavLink>
-          <NavLink to="/women" activeClassName="font-bold">
+          <NavLink
+            to="/women"
+            className="text-gray-700 hover:underline hover:text-gray-900"
+            activeClassName="font-bold"
+          >
             Ladies
           </NavLink>
-          <NavLink to="/accessories" activeClassName="font-bold">
+          <NavLink
+            to="/accessories"
+            className="text-gray-700 hover:underline hover:text-gray-900"
+            activeClassName="font-bold"
+          >
             Accessories
           </NavLink>
-          <NavLink to="/electronics" activeClassName="font-bold">
+          <NavLink
+            to="/electronics"
+            className="text-gray-700 hover:underline hover:text-gray-900"
+            activeClassName="font-bold"
+          >
             Electronics
           </NavLink>
         </div>

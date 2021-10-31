@@ -23,8 +23,18 @@ const cartSlice = createSlice({
         progress: undefined,
       });
     },
+    removeFromCart: (state, action) => {
+      const newState = state.cartList.filter(
+        (item) => item.id !== action.payload
+      );
+      state.cartList = newState;
+    },
   },
 });
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
+
+export const selectTotalAmount = (state) =>
+  state.cart.cartList.map((item) => item.price).reduce((a, b) => a + b, 0);
+
 export default cartSlice.reducer;

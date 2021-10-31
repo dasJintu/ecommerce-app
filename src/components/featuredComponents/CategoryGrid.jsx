@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const CategoryGrid = () => {
   return (
@@ -7,22 +7,37 @@ const CategoryGrid = () => {
         Shop By Category
       </h1>
       <section className="grid grid-cols-3 gap-6">
-        <div className="pt-10 pb-20 px-8 bg-gray-200 rounded-lg space-y-3">
+        <Link
+          to="/men"
+          className="pt-10 pb-20 px-8 bg-men bg-cover rounded-lg space-y-3  hover:shadow-md"
+        >
           <p className="text-xl font-bold">Mens Trend</p>
           <button>Shop Now</button>
-        </div>
-        <div className="pt-10 pb-20 px-8 bg-gray-200 rounded-lg space-y-3">
+        </Link>
+
+        <Link
+          to="/women"
+          className="pt-10 pb-20 px-8 bg-women bg-cover rounded-lg space-y-3  hover:shadow-lg"
+        >
           <p className="text-xl font-bold">Womens Trend</p>
           <button>Shop Now</button>
-        </div>
-        <div className="pt-10 pb-20 px-8 bg-gray-200 row-span-2 rounded-lg space-y-3">
+        </Link>
+
+        <Link
+          to="/accessories"
+          className=" row-span-2 pt-10 pb-20 px-8 bg-accessory bg-cover rounded-lg space-y-3  hover:shadow-lg"
+        >
           <p className="text-xl font-bold">Accessories</p>
           <button>Shop Now</button>
-        </div>
-        <div className="pt-10 pb-20 px-8 bg-gray-200 col-span-2 rounded-lg space-y-3">
+        </Link>
+
+        <Link
+          to="/electronics"
+          className="col-span-2 pt-10 pb-20 px-8 bg-electronics bg-right bg-cover  rounded-lg space-y-3  hover:shadow-lg"
+        >
           <p className="text-xl font-bold">Electricals</p>
           <button>Shop Now</button>
-        </div>
+        </Link>
       </section>
     </div>
   );

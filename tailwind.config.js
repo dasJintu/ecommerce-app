@@ -16,6 +16,13 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        hero: "url('src/images/newhero.jpg')",
+        men: "url('src/images/men.jpg')",
+        women: "url('src/images/women.jpg')",
+        accessory: "url('src/images/accessory.jpg')",
+        electronics: "url('src/images/electronics.jpg')",
+      },
     },
   },
   variants: {

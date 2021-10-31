@@ -65,7 +65,7 @@ const FreeShipping = () => {
           return (
             <div key={item.id} className="text-gray-800">
               {item.svg}
-              <h1 className="uppercase text-gray-700 tracking-widest pt-7 pb-2">
+              <h1 className="uppercase text-gray-700 tracking-widest font-bold pt-7 pb-2">
                 {item.title}
               </h1>
               <p className="uppercase text-gray-500 tracking-widest text-xs">
