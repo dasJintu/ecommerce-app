@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  mode: "jit",
+  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -17,11 +18,11 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        hero: "url('src/images/newhero.jpg')",
-        men: "url('src/images/men.jpg')",
-        women: "url('src/images/women.jpg')",
-        accessory: "url('src/images/accessory.jpg')",
-        electronics: "url('src/images/electronics.jpg')",
+        hero: "url('./src/images/newhero.jpg')",
+        men: "url('./src/images/men.jpg')",
+        women: "url('./src/images/women.jpg')",
+        accessory: "url('./src/images/accessory.jpg')",
+        electronics: "url('./src/images/electronics.jpg')",
       },
     },
   },
