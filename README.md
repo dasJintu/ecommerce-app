@@ -18,3 +18,6 @@ This starts the development server on
 > http://localhost:3000
 
 Visit `http://localhost:3000` to view your application.
+
+### UPDATED VERSION -
+https://github.com/dasJintu/ecommerce-project
